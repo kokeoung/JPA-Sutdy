@@ -20,8 +20,6 @@ public class JpaMain {
 
             em.detach(member);
 
-            System.out.println("=========================");
-
             tx.commit();
         } catch (Exception e) {
             tx.rollback();
